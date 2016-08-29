@@ -7,12 +7,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.kyle.kysyapp.MainActivity">
+    tools:context="com.example.kyle.kysyapp.MainActivity"
+    android:background="#0000FF"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
     <Button
         android:id="@+id/Syed_Button"
         android:layout_width="wrap_content"
@@ -28,6 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-
         />
+    
 </RelativeLayout>
