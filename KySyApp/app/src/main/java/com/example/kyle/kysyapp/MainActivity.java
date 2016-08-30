@@ -17,9 +17,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         syedButton.setOnClickListener(this);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(this, "Welcome!", Toast.LENGTH_LONG).show();
+    }
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(this, "Syed pities da fool", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Syed pities da fool", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(this, "Goodbye", Toast.LENGTH_LONG).show();
+
     }
 }
